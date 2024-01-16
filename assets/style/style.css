@@ -9,9 +9,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+ul {
+  margin-top: 20px;
+}
+
 li {
   list-style: none;
-  padding-left: 5px;
+  padding: 10px 5px;
 }
 
 /* HEADER */
@@ -55,27 +59,33 @@ main {
 
 .list-title {
   color: #494747;
-  margin-bottom: 15px;
 }
 
 .list-section h3::before {
   content: "\25BE";
 }
 
-.checklist {
+.checklist::before {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   text-align: center;
-  line-height: 1rem;
+  vertical-align: bottom;
+  font-size: 0.7rem;
   margin-right: 5px;
 }
 
-.checklist.tick {
+.checklist.tick::before {
+  content: "\2713";
   color: rgb(49, 190, 49);
   border: 1px solid rgb(49, 190, 49);
+}
+
+.checklist.cross::before {
+  content: "\2717";
+  color: rgb(226, 23, 9);
+  border: 1px solid rgb(226, 23, 9);
 }
 
 /* BUTTON */
@@ -100,6 +110,29 @@ main {
   font-size: 0.6rem;
   padding: 6px 12px;
   color: #ffffff;
-  background-color: #47adf1;
   border-radius: 20px;
+}
+
+.tag.blue {
+  background-color: #47adf1;
+}
+
+.tag.purple {
+  background-color: #9c72e4;
+}
+
+.tag.green {
+  background-color: #64c0a9;
+}
+
+.tag.orange {
+  background-color: #f29e33;
+}
+
+.tag.pink {
+  background-color: #d863a1;
+}
+
+.tag.lime {
+  background-color: #b0c926;
 }
