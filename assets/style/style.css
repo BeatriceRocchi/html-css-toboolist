@@ -26,5 +26,41 @@ header h1 {
 
 /* MAIN */
 main {
-  background-color: #F6F8F9;
+  background-color: #f6f8f9;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 3px auto;
+  background-color: #ffffff;
+  padding: 20px 50px;
+}
+
+.container.rounded-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.container.rounded-bottom {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* BUTTON */
+.button {
+  font-family: inherit;
+  font-size: 0.7rem;
+  padding: 6px 12px;
+  color: #ffffff;
+  background-color: #47adf1;
+  border: 2px solid #47adf1;
+  border-radius: 5px;
+}
+
+.button.disabled {
+  color: #cdd3d6;
+  background-color: #ffffff;
+  border-color: #cdd3d6;
 }
