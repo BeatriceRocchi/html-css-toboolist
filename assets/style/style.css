@@ -9,6 +9,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+li {
+  list-style: none;
+  padding-left: 5px;
+}
+
 /* HEADER */
 header {
   padding: 10px 20px;
@@ -48,6 +53,31 @@ main {
   border-bottom-right-radius: 8px;
 }
 
+.list-title {
+  color: #494747;
+  margin-bottom: 15px;
+}
+
+.list-section h3::before {
+  content: "\25BE";
+}
+
+.checklist {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1rem;
+  margin-right: 5px;
+}
+
+.checklist.tick {
+  color: rgb(49, 190, 49);
+  border: 1px solid rgb(49, 190, 49);
+}
+
 /* BUTTON */
 .button {
   font-family: inherit;
@@ -63,4 +93,13 @@ main {
   color: #cdd3d6;
   background-color: #ffffff;
   border-color: #cdd3d6;
+}
+
+/* TAG */
+.tag {
+  font-size: 0.6rem;
+  padding: 6px 12px;
+  color: #ffffff;
+  background-color: #47adf1;
+  border-radius: 20px;
 }
